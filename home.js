@@ -11,17 +11,17 @@ const issueLoding = () => {
 
 
 }
-// const showIssue = async(id) => {
-//     spiner(true);
+ const showIssue = async(id) => {
+     spiner(true);
 
-//     const url = `https://phi-lab-server.vercel.app/api/v1/lab/issue/${id}`;
-//    // console.log(url);
-//     const res = await fetch(url);
-//     const show = await res.json();
-//     spiner(false);
+    const url = `https://phi-lab-server.vercel.app/api/v1/lab/issue/${id}`;
+    // console.log(url);
+     const res = await fetch(url);
+     const show = await res.json();
+    spiner(false);
 
-//     displayIssueShow(show.data);
-// };
+   displayIssueShow(show.data);
+ };
 
 
 const displayIssueShow = (card)=> {
